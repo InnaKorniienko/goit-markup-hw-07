@@ -18,18 +18,18 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     background 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+} 
 }
 
 .portfolio-button_item:not(:last-child){
     margin-right: 8px;
 }
-
-.portfolio-button_nav:hover,
-.portfolio-button_nav:focus {
-    color: #FFFFFF;
-    background: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-} 
 
 .portfolio_list {
     display: flex;
@@ -37,6 +37,7 @@
     margin-left: -30px;
     margin-top: -30px;
 }
+
 .portfolio_item {
     margin-left: 30px;
     margin-top: 30px;
@@ -71,11 +72,11 @@
 .portfolio_link {
     display: block;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio_link:hover,
-.portfolio_link:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
 .portfolio_img_overlay {
@@ -99,9 +100,9 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio_link:hover .portfolio_overlay,
-.portfolio_link:focus .portfolio_overlay {
+    .portfolio_link:hover &,
+    .portfolio_link:focus & {
     transform: translateY(0%);
+}
 }

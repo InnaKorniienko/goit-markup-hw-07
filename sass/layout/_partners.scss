@@ -13,6 +13,12 @@
     height: 92px;
     padding: 0px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover,
+    &:focus {
+    border-color: var(--accent-color);
+}
 }
 
 .partners_item:not(:last-child) {
@@ -25,14 +31,11 @@
     background-size: contain;
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.partners_link:hover .partners_icon,
-.partners_link:focus .partners_icon {
+    .partners_link:hover &,
+    .partners_link:focus & {
     fill: var(--accent-color);
 }
-
-.partners_link:hover,
-.partners_link:focus {
-    border-color: var(--accent-color);
 }
+
+
