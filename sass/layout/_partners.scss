@@ -1,9 +1,9 @@
-.partners_list {
+.partners {
     display: flex;
     justify-content: center;
 }
 
-.partners_link {
+.partners__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +21,19 @@
 }
 }
 
-.partners_item:not(:last-child) {
+.partners__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.partners_icon {
+.partners__icon {
     width: 106px;
     height: 60px;
     background-size: contain;
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .partners_link:hover &,
-    .partners_link:focus & {
+    .partners__link:hover &,
+    .partners__link:focus & {
     fill: var(--accent-color);
 }
 }

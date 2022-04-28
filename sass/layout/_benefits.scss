@@ -1,13 +1,13 @@
-.benefits_list {
+.benefits {
     display: flex;
     align-content: center;
 }
 
-.benefits_item:not(:last-child) {
+.benefits__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.benefits_icon-link {
+.benefits__icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
     margin-bottom: 30px;
 }
 
-.benefits_heading {
+.benefits__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -27,7 +27,7 @@
     width: 270px;
 }
 
-.benefits_text {
+.benefits__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
